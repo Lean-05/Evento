@@ -1,0 +1,16 @@
+{
+    "adriana": {
+      "name": "Adriana de La Fuente",
+      "bio": "Nos honra presentar a una mujer extraordinaria, cuyo compromiso con la excelencia profesional y el servicio internacional ha dejado huella en múltiples rincones del mundo. Licenciada en Interpretación Simultánea y diplomada en Etimología, Latín y Terminología Aplicada, nuestra conferencista ha forjado una trayectoria académica sólida, con estudios de posgrado en instituciones de alto prestigio como la Universidad Nacional Autónoma de México, la Universidad Iberoamericana y la Universidad Regis en Colorado, Estados Unidos. Su formación abarca desde la lengua castellana y la filosofía hasta el desarrollo humano y organizacional. En el ámbito rotario, ha roto barreras como la primera mujer en liderar múltiples cargos en la Zona 25 A, incluyendo su rol como Vicepresidenta Mundial del Instituto de Liderazgo Rotario (2022–2024) y miembro del Comité Mundial de La Mujer en Rotary. Ha representado al Presidente Mundial en 15 ocasiones y ha sido observadora y delegada votante en cinco Consejos de Legislación, demostrando una presencia activa e influyente en los foros más importantes del liderazgo global. Su impacto va mucho más allá de las fronteras rotarias. Con más de 22 años como Coach Senior Profesional, ha asesorado a Jefes de Estado, Ministros, Gobernadores y líderes del sector privado. Ha compartido su conocimiento en 72 países, y es fundadora de la Escuela Interdisciplinaria de Coaching y de la Asociación Nacional de Coaches en México. También ocupa el cargo de Vicepresidenta de Mejores Mujeres por México, organización comprometida con el liderazgo femenino.",
+      "photo": "./img/personas/adriana.jpeg",
+      "socials": {
+        "email":"mailto:adrianadelafuenterotary@gmail.com",
+        "facebook": "https://www.facebook.com/adrianadelafuentecoaching"
+      }
+    },
+    "par": {
+      "name": "Ailén Ramírez y Lorena Montenegro",
+      "bio": "Ailén Ramírez es Magíster en Recursos Humanos, Licenciada en Relaciones Públicas y Coach Ontológico Profesional. Lorena Montenegro es Licenciada en Relaciones Públicas e Institucionales, especializada en Comunicación Estratégica y Branding.  Son fundadoras de Agencia PAR, la primera agencia de Relaciones Públicas y Comunicación Integral de Trelew, integrada por un equipo de especialistas en comunicación, marketing y gestión humana. Con casi una década de trayectoria en el sector privado, público y educativo, han liderado proyectos de comunicación estratégica, marketing, gestión de equipos y capacitación profesional, apostando al crecimiento sostenible a través de vínculos genuinos. Desde Agencia PAR, trabajan en potenciar marcas, fortalecer equipos de trabajo y crear espacios de networking que promueven la colaboración y el desarrollo profesional, convencidas de que la comunicación y las relaciones humanas son motores de transformación real. ",
+      "photo": "./img/personas/ailen-y-lorena.jpeg"
+    }
+}

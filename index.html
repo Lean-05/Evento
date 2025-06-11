@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotary 2025</title>
+    <!-- Carga diferida de CSS no crítico -->
+    <link rel="stylesheet" href="/css/style.css?v=1" />
+
+    <!-- Carga diferida del resto del CSS -->
+    <link rel="stylesheet" href="./vendor/aos/aos.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="./vendor/swiper/swiper-bundle.min.css" media="print" onload="this.media='all'" />
+  </head>
+  <body>
+    <header id="header" class="header"> <!--Barra de Navegacion-->
+      <div class="header__container container-xxl">
+        <div class="header__miniportada me-auto">
+          <img src="/img/mini-portada-1.png" class="header__miniportada" />
+        </div>
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul class="header__list">
+            <li><a href="#init" class="nav-link scrollto active">Hogar</a></li>
+            <li><a href="#about" class="nav-link scrollto">Quienes Somos</a></li>
+            <li><a href="#speakers" class="nav-link scrollto">Oradores</a></li>
+            <li><a href="#schedule" class="nav-link scrollto">Cronograma</a></li>
+            <li><a href="#venue" class="nav-link scrollto">Evento</a></li>
+            <li><a href="#gallery" class="nav-link scrollto">Galeria</a></li>
+            <li><a href="#supporters" class="nav-link scrollto">Patrocinadores</a></li>
+            <li><a href="#contact" class="nav-link scrollto">Contactos</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
+
+    <section id="init"> <!--Inicio de Pagina-->
+      <div class="init__container">
+        <h1 class="init__item">CONFERENCIA<br/>DISTRITAL</h1>
+        <p class="init__item">
+          9 - 10 de Mayo, Museo Paleontológico Egidio Feruglio, Trelew
+        </p>
+        <a href="./video/presentacion.mp4" class="init__link--play"></a>
+        <a href="#about" class="init__link--btn scrollto">Quienes somos</a>
+      </div>
+    </section>
+
+    <main id="main">
+      <section id="about"> <!--Quienes Son-->
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2>¿Quiénes somos?</h2>
+              <p>
+                Rotary International es una organización internacional y club de
+                servicio cuyo propósito es reunir a líderes empresariales y
+                profesionales, con el fin de prestar servicios humanitarios en
+                sus comunidades, promover elevadas normas de ética en todas las
+                ocupaciones y contribuir a fomentar la buena voluntad y la paz
+                en el mundo.
+              </p>
+            </div>
+            <div class="col-lg-3">
+              <h3>Dónde</h3>
+              <p>MEF - Museo Paleontológico Egidio Feruglio en Trelew Chubut</p>
+            </div>
+            <div class="col-lg-3">
+              <h3>Cuando</h3>
+              <p>
+                Viernes y Sabado <br />
+                9 - 10 de Mayo
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="speakers"> <!--Oradores-->
+        <div class="speakers__container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <div class="speakers__header">
+            <h2>ORADORES DEL EVENTO</h2>
+            <p>Aquí están algunos de nuestros ponentes</p>
+          </div>
+          <div class="speakers__row">
+            <div class="speakers__card">
+              <div class="speakers__item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <img src="./img/personas/adriana.jpeg" loading="lazy" alt="" class="img" />
+                <div class="speakers__details">
+                  <h3 class="speakers__title--mod">
+                    <a href="speaker-details.html" onclick="loadSpeaker('adriana', event)">Adriana De La Fuente</a>
+                  </h3>
+                  <p>
+                    Exgobernadora de Distrito y Representante de Rotary
+                    Internacional
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="speakers__card">
+              <div class="speakers__item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <img src="./img/personas/ailen-y-lorena.jpeg" alt="" class="img"/>
+                <div class="speakers__details">
+                  <h3>
+                    <a href="speaker-details.html" onclick="loadSpeaker('par', event)">Ailén Ramírez <br />y <br />Lorena Montenegro</a>
+                  </h3>
+                  <p>Fundadoras de la Agencia PAR.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="schedule"> <!--Cronograma-->
+        <div class="schedule__container aos-init aos-animate" data-aos="fade-up">
+          <div class="schedule__header">
+            <h2>Programa del evento</h2>
+            <p>Aquí está nuestro calendario de eventos.</p>
+          </div>
+          <ul class="schedule__nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+            <li class="schedule__item">
+              <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Dia 1</a>
+            </li>
+            <li class="schedule__item">
+              <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Dia 2</a>
+            </li>
+          </ul>
+          <h3 class="schedule__caption">
+            A continuación, compartimos el cronograma previsto para el
+            desarrollo del evento, con las actividades organizadas según el
+            horario establecido. Les invitamos a participar puntualmente en cada
+            instancia para aprovechar al máximo esta experiencia.
+          </h3>
+          <div class="schedule__content tab-content row" data-aos="fade-up" data-aos-delay="200">
+            <!--Cronograma Dia 1-->
+            <div id="day-1" class="col-lg-8 tab-pane fade show active" role="tabpanel">
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>13:00 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/acreditacion.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4 class="schedule__title--modif">Acreditaciones</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>14:00 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/ceremonia-de-apertura.png" alt=""/>
+                  </div>
+                  <h4 class="schedule__title--modif">Apertura y Saludo</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>14:02 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/bandera.png" alt="" />
+                  </div>
+                  <h4 class="schedule__title--modif">Campanazo y saludo a las banderas</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>14:03 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/himno-nacional.png" alt="" />
+                  </div>
+                  <h4 class="schedule__title--modif">Himno Nacional e Himno de México</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>14:10 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/presentacion.png" alt="Hubert Hirthe"/>
+                  </div>
+                  <h4 class="schedule__title--modif">Presentación de autoridades Civiles, Rotarias y EGD presentes</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/personas/richard.png" alt="Hubert Hirthe"/>
+                  </div>
+                  <h4>Apertura y saludo a cargo del Gobernador de Distrito</h4>
+                  <p>Richard E.Yas</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/declaracion.png" alt=""/>
+                  </div>
+                  <h4>Declaración en honor al EGD</h4>
+                  <p>Roberto Petón</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/personas/juan.png" alt=""/>
+                  </div>
+                  <h4>Palabras a cargo del EGD</h4>
+                  <p>Juan Pedro Torroba</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/entrega-de-caja.png" alt=""/>
+                  </div>
+                  <h4 class="schedule__title--modif">Entrega de presentes a la familia</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>14:30 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/discurso.png" alt="Cole Emmerich" />
+                  </div>
+                  <h4 class="schedule__title--modif">
+                    Palabras del Gorbenador de Chubut Ignacio Torres e Int.
+                    Gerardo Merino
+                  </h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>14:45 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/personas/Adriana.png" alt="Alejandrin Littel"/>
+                  </div>
+                  <h4>
+                    Presentación y mensaje de bienvenida de la representante del
+                    PRI EGD
+                  </h4>
+                  <p>Adriana de la Fuente D.4170 de México</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>15:15 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/guirnalda.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4 class="schedule__title--modif">
+                    Homenaje a los fallecidos y distinción al EGD Horacio Muñecas
+                  </h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>15:25 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/personas.png" alt="Willow Trantow" />
+                  </div>
+                  <h4>Primera sesión plenaria</h4>
+                  <p>Comité de Crisis: Acciones</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>16:15 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/hora-de-cafe.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4 class="schedule__title--modif">Coffee Break</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>16:30 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/comite.png" alt="Willow Trantow" />
+                  </div>
+                  <h4>Comité de Ponencias y Legislación</h4>
+                  <p>En paralelo</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>16:45 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/identidad.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4 class="schedule__title--modif">Identidad Trelewense</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>17:00 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/mentoria.png" alt="Willow Trantow" />
+                  </div>
+                  <h4 class="schedule__title--modif">Comité de Mentoría</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>17:15 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/servicio.png" alt="Willow Trantow" />
+                  </div>
+                  <h4 class="schedule__title--modif">Ruedas Internas</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>17:30 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/proyecto.png" alt="Willow Trantow" />
+                  </div>
+                  <h4 class="schedule__title--modif">Comité de Proyectos de Servicio</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>18:00 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/siembra.png" alt="Willow Trantow" />
+                  </div>
+                  <h4 class="schedule__title--modif">Comité de Medio Ambiente</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>18:15 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/juntos.png" alt="Willow Trantow" />
+                  </div>
+                  <h4>"La Magia de Construir Juntos"</h4>
+                  <p>
+                    Charla dinámica e interactiva a cargo de Ailén Ramírez y
+                    Lorena Montenegro
+                  </p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>19:00 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/cerrar-con-llave.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4 class="schedule__title--modif">
+                    Cierre de la Primera Jornada
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!--Fin del Dia 1-->
+
+            <!--Cronograma Dia 2-->
+            <div id="day-2" class="col-lg-8 tab-pane fade" role="tabpanel">
+              <h2 class="schedule__part--modif">1° Parte del Evento</h2>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>09:00 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/presentacion.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4 class="schedule__title--modif">
+                    Palabras iniciales de la jornada
+                  </h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>09:05 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/personas/Omar D.png" alt="Brenden Legros" />
+                  </div>
+                  <h4>
+                    Comité de membresía con la participación del coordinador de
+                    Rotary para zona 23b EGD
+                  </h4>
+                  <p>Omar D.Rauzi</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>09:25 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/comite.png" alt="Hubert Hirthe" />
+                  </div>
+                  <h4>Comité de IP</h4>
+                  <p>Imagen Pública</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>09:45 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/personas.png" alt="Cole Emmerich" />
+                  </div>
+                  <h4>Comité de LFR</h4>
+                  <p>La Fundación Rotaria</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>10:00 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/comite (1).png" alt="Cole Emmerich"/>
+                  </div>
+                  <h4 class="schedule__title--modif">
+                    Reconocimientos a Conjuntez y al Comité de Crisis
+                  </h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>10:30 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/hora-de-cafe.png" alt="Alejandrin Littel"/>
+                  </div>
+                  <h4 class="schedule__title--modif">Coffee Break</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>10:30 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/orquesta.png" alt="Willow Trantow" />
+                  </div>
+                  <h4 class="schedule__title--modif">
+                    Presentación de Orquesta de Niños
+                  </h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>11:00 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/intercambio.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4 class="schedule__title--modif">
+                    Comité de Servicio Internacional
+                  </h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>11:15 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/dia-de-la-amistad.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4>Comité de I.R.A.</h4>
+                  <p>Intercambio Rotario de Amistad</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>11:30 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/multicultural.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4>Comité de D.E.I.</h4>
+                  <p>Diversidad, Equidad e Inclusión</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>11:50 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/puno.png" alt="Willow Trantow" />
+                  </div>
+                  <h4 class="schedule__title--modif">
+                    Comité de Empoderamiento y Cyber Bullying
+                  </h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>12:05 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/reunion.png" alt="Willow Trantow" />
+                  </div>
+                  <h4 class="schedule__title--modif">Rotary Business</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>12:35 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/informe-seo.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4 class="schedule__title--modif">Informe de Ponencias</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>12:45 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/fotografia.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4 class="schedule__title--modif">Foto Grupal</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>13:00 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/plato.png" alt="Willow Trantow" />
+                  </div>
+                  <h4 class="schedule__title--modif">Almuerzo</h4>
+                </div>
+              </div>
+
+              <!--Division-->
+              <h2 class="schedule__part--modif">2° Parte del Evento</h2>
+              <!--Division-->
+
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>14:30 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/compania.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4 class="schedule__title--modif">
+                    Interact - Rotaract
+                  </h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>14:50 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/presentacion.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4 class="schedule__title--modif">
+                    Presentación de Intercambio de Jóvenes, RYLA y ROTEX
+                  </h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>15:50 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/personas/Adriana.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4>"La motivación, el liderazgo, la inspiración y la superación"</h4>
+                  <p>A cargo de la EGD Adriana de la Fuente</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>16:40 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/hora-de-cafe.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4 class="schedule__title--modif">Coffee Breack</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>16:40 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/club.png" alt="Willow Trantow" />
+                  </div>
+                  <h4 class="schedule__title--modif">CONGO</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>17:00 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/personas/claudia.png" alt="Willow Trantow" />
+                  </div>
+                  <h4>Presentación de GN Claudia Sar</h4>
+                  <p>Gobernador/a Nominado/a</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>17:10 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/personas/martin-rodriguez.png" alt="Willow Trantow" />
+                  </div>
+                  <h4>Presentación de GE Martín Rodríguez</h4>
+                  <p>Gobernador Electo 2026 - 2027</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>17:20 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/personas/Horacio-Rosenthal.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4>
+                    Informe del COL a cargo del representante del Dist.4921 EGD
+                  </h4>
+                  <p>H.Rosenthal</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>17:30 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/personas/santiago.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4>Presentación del Presupuesto del GE S.Suescun</h4>
+                  <p>Gobernador Electo 2025 - 2026</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>17:40 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/aprobacion-de-documentos.png" alt="Willow Tranto"/>
+                  </div>
+                  <h4>Aprobación de la Rendición del Presupuesto del EDG</h4>
+                  <p>Jose L. Marino 2023 - 2024</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>17:50 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/convencion.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4 class="schedule__title--modif">
+                    Promoción de la Convención 2024 - 2025 en Calgary
+                  </h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>18:00 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/instituto.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4 class="schedule__title--modif">
+                    Promoción del Instituto Rotary 2025 - 2026 en Punta del Este
+                  </h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>18:10 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/personas/santiago.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4>Mensaje del GE S.Suescun</h4>
+                  <p>Gobernador Electo 2025 - 2026</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>18:20 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/promocion.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4 class="schedule__title--modif">
+                    Promoción de la Conferencia 2025 - 2026
+                  </h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>18:30 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/personas/Adriana.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4>
+                    Evaluación de la Conf. a cargo de la Representante del PRI
+                    EGD
+                  </h4>
+                  <p>Adriana De La Fuente</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>19:15 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/regalo.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4>
+                    Entrega de regalo a la EGD
+                  </h4>
+                  <p>Adriana De La Fuente</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>19:30 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/personas/richard.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4>
+                    Cierre de la confernecia a cargo del Gobernador de Distrito
+                    4921
+                  </h4>
+                  <p>Richard E.Yas 2024 - 2025</p>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>20:00 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/medalla.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4 class="schedule__title--modif">Entrega de reconocimientos y regalos al equipo</h4>
+                </div>
+              </div>
+              <div class="schedule__item row">
+                <div class="col-md-2"><time>20:30 horas</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="./img/iconos/escenario.png" alt="Willow Trantow"/>
+                  </div>
+                  <h4 class="schedule__title--modif">
+                    Arriado de pabellones – Campanazo de cierre
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!--Fin del Dia 2-->
+          </div>
+        </div>
+      </section>
+      <section id="venue"> <!--Lugar del Evento-->
+        <div class="container-fluid" data-aos="fade-up">
+          <div class="venue__header">
+            <h2>Lugar Del Evento</h2>
+            <p>Información y galería del lugar del evento</p>
+          </div>
+          <div class="row g-0">
+            <div class="col-lg-6 venue-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.098129078171!2d-65.30937952384447!3d-43.2493651711241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe0144b6c0db8289%3A0xa068b8c8e3fa0410!2sAv.%20Fontana%20140%2C%20U9100%20Trelew%2C%20Chubut%2C%20Argentina!5e0!3m2!1ses!2spe!4v1745685298010!5m2!1ses!2spe" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-6 venue-info">
+              <div class="row justify-content-center">
+                <div class="col-11 col-lg-8 position-relative">
+                  <h3>Museo Paleontológico Egidio Feruglio, Trelew</h3>
+                  <p>
+                    El Museo paleontológico Egidio Feruglio es, en tanto que
+                    centro de exposición e investigación específica, un museo de
+                    historia natural ubicado en la ciudad de Trelew, en la
+                    provincia del Chubut, en Argentina. En él se exponen
+                    especímenes de la flora y la fauna fósiles de la Patagonia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid venue-gallery-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-0">
+            <div class="col-lg-3 col-md-4">
+              <div class="venue-gallery">
+                <a href="./img/museo/MEF-1.png" class="glightbox" data-gall="venue-gallery">
+                  <img src="./img/museo/MEF-1.png" alt="" class="img-fluid" />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <div class="venue-gallery">
+                <a href="./img/museo/MEF-2.png" class="glightbox" data-gall="venue-gallery">
+                  <img src="./img/museo/MEF-2.png" alt="" class="img-fluid" />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <div class="venue-gallery">
+                <a href="./img/museo/MEF-3.png" class="glightbox" data-gall="venue-gallery">
+                  <img src="./img/museo/MEF-3.png" alt="" class="img-fluid" />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <div class="venue-gallery">
+                <a href="./img/museo/MEF-4.png" class="glightbox" data-gall="venue-gallery">
+                  <img src="./img/museo/MEF-4.png" alt="" class="img-fluid" />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <div class="venue-gallery">
+                <a href="./img/museo/MEF-5.png" class="glightbox" data-gall="venue-gallery">
+                  <img src="./img/museo/MEF-5.png" alt="" class="img-fluid" />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <div class="venue-gallery">
+                <a href="./img/museo/MEF-6.png" class="glightbox" data-gall="venue-gallery">
+                  <img src="./img/museo/MEF-6.png" alt="" class="img-fluid" />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <div class="venue-gallery">
+                <a href="./img/museo/MEF-7.png" class="glightbox" data-gall="venue-gallery">
+                  <img src="./img/museo/MEF-7.png" alt="" class="img-fluid" />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <div class="venue-gallery">
+                <a href="./img/museo/MEF-8.png" class="glightbox" data-gall="venue-gallery">
+                  <img src="./img/museo/MEF-8.png" alt="" class="img-fluid" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery"> <!--Galeria de Fotos-->
+        <div class="gallery__container" data-aos="fade-up">
+          <div class="gallery__header">
+            <h2>Galería</h2>
+            <p>Consulta nuestra galeria de los eventos recientes</p>
+          </div>
+        </div>
+        <div class="gallery-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <a href="./img/galeria-evento/gal-1.jpg" class="gallery-lightbox">
+                <img src="./img/galeria-evento/gal-1.jpg" class="img-fluid" alt=""/>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./img/galeria-evento/gal-2.jpeg" class="gallery-lightbox">
+                <img src="./img/galeria-evento/gal-2.jpeg" class="img-fluid" alt=""/>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./img/galeria-evento/gal-3.jpeg" class="gallery-lightbox">
+                <img src="./img/galeria-evento/gal-3.jpeg" class="img-fluid" alt=""/>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./img/galeria-evento/gal-4.jpeg" class="gallery-lightbox">
+                <img src="./img/galeria-evento/gal-4.jpeg" class="img-fluid" alt=""/>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./img/galeria-evento/gal-5.jpg" class="gallery-lightbox">
+                <img src="./img/galeria-evento/gal-5.jpg" class="img-fluid" alt=""/>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./img/galeria-evento/gal-6.png" class="gallery-lightbox">
+                <img src="./img/galeria-evento/gal-6.png" class="img-fluid" alt=""/>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./img/galeria-evento/gal-7.jpeg" class="gallery-lightbox">
+                <img src="./img/galeria-evento/gal-7.jpeg" class="img-fluid" alt=""/>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./img/galeria-evento/gal-8.jpeg" class="gallery-lightbox">
+                <img src="./img/galeria-evento/gal-8.jpeg" class="img-fluid" alt=""/>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!--BOTON DE GALERIA DE FOTOS-->
+        <!--<a href="./galeria.html" class="init__link--btn scrollto">Explorar galería</a>-->
+      </section>
+      <section id="supporters"> <!--Patrocinadores-->
+        <div class="container" data-aos="fade-up">
+          <div class="supporters__header">
+            <h2>Patrocinadores</h2>
+          </div>
+        
+          <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/aca.png" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/aguada.png" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/ahg.png" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/banco-chubut.png" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/electrosur.jpg" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/entretur.png" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/garmic.png" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/horneva.jpeg" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/ismedical.png" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="memorable">
+                <img src="./img/sponsors/memorable_delicias.png" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/municipalidad-rw.png" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="municipalidad">
+                <img src="./img/sponsors/municipalidad-tw.png" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/orquesta.png" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/patagonia-arg.png" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/patagonia-ident.jpeg" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/pogler.jpeg" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/rawson.jpeg" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/farmacia-patagonica.jpg" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/ayun-mapu.jpg" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/cardon.png" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/hook.jpeg" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/arkon.png" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="./img/sponsors/matesur-logo.png" class="img-fluid" alt="" loading="lazy"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="menu"> <!--Menu de Comida-->
+        <div class="menu aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <div class="menu__header">
+            <h2>Menu Rotario</h2>
+            <p>
+              Compartimos con ustedes este menú, preparado con dedicación para
+              esta jornada.
+            </p>
+          </div>
+          <div class="menu__container">
+            <div class="card mb-3" style="max-width: 900px">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="./img/menu/menu-1.jpeg" loading="lazy" class="img-fluid rounded-start h-100 w-100 object-fit-cover" alt="..."/>
+                </div>
+                <div class="col-md-6">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.4983846875143!2d-65.26330779999999!3d-43.2828836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe015ab50ead1505%3A0x7435a90540ef6c4a!2sRestaurant%20Don%20Pedro!5e0!3m2!1ses!2spe!4v1746153041395!5m2!1ses!2spe" width="100%" height="100%" style="border: 0; min-height: 100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu__container">
+            <div class="card mb-3" style="max-width: 900px">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-md-6">
+                  <img src="./img/menu/menu-2.jpeg" loading="lazy" class="img-fluid rounded-start w-100 h-100 object-fit-cover" alt="..."/>
+                </div>
+                <div class="col-md-6">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.7171105946823!2d-65.316974!3d-43.2573503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe014507ab708f93%3A0x6753d39bbdb3f8e4!2sEdisonHouse!5e0!3m2!1ses!2spe!4v1746153958478!5m2!1ses!2spe" class="w-100 h-100" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="oferta" class="section-bg"> <!--Oferta-->
+        <div class="container" data-aos="fade-up">
+          <div class="oferta__header">
+            <h2>Oferta</h2>
+            <p>
+              ¡Oferta especial! 25% de descuento por tiempo limitado.
+            </p>
+          </div>
+          <div class="card mb-3" style="max-width: 1320px;">
+            <div class="oferta-container row g-0">
+              <div class="col-md-4">
+                <img src="./img/oferta.jpeg" loading="lazy" class="rounded-start img-oferta" alt="">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card_title">¡Descuento en el Museo por La Magia de Trelew!</h3>
+                  <p class="card-text">🦕 ¡Aprovecha esta increíble oportunidad! En el marco del VI Encuentro de la Conferencia Distrital La Magia de Trelew, invitamos a todos los participantes a disfrutar de un 25% de descuento en la entrada general al Museo. 📅 Esta promoción estará disponible solo los días 9 y 10 de mayo de 2025. Ven y vive una experiencia única recorriendo nuestras exposiciones, sumérgete en la historia y descubre lo que tenemos preparado para ti. 🎨 ¡No te lo pierdas, te esperamos con muchas sorpresas! 🎉</p>
+                  <img class="mini-portada" loading="lazy" src="./img/mini-portada-1.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="hoteles" class="section-bg"> <!--Hoteles-->
+        <div class="container" data-aos="fade-up">
+          <div class="hoteles__header">
+            <h2>Hoteles</h2>
+            <p>
+              Los hoteles ofrecen comodidad y servicios para una estancia inolvidable.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 mb-4">
+              <video class="w-100 max-w-[500px] h-[300px] border border-secondary rounded" controls>
+                <source src="./video/aguada.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <video class="w-100 max-w-[500px] h-[300px] border border-secondary rounded" controls>
+                <source src="./video/tehuelche.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section-bg"> <!--Contactos-->
+        <div class="container" data-aos="fade-up">
+          <div class="contact__header">
+            <h2>Contáctenos</h2>
+            <p>
+              ¿Tiene alguna duda o comentario? Contáctenos y con gusto le
+              atenderemos.
+            </p>
+          </div>
+          <div class="row contact-info">
+            <div class="col-md-4">
+              <div class="contact-address">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Dirección</h3>
+                <a href="https://www.google.com/maps/place/Rotary+Club+Ant%C3%BA+Trelew+Casa+de+la+Amistad+Carlos+A.+Juguera/@-43.2566428,-65.3133823,17z/data=!4m6!3m5!1s0xbe01457c7ee16051:0x9cd2466385cb890!8m2!3d-43.2566428!4d-65.3108074!16s%2Fg%2F11kmlvzrsc?entry=ttu&g_ep=EgoyMDI1MDQyNy4xIKXMDSoASAFQAw%3D%3D">Casa de la Amistad - Rotary Club Antú<br />Av. Roca 468 - Trelew</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-phone">
+                <i class="bi bi-phone"></i>
+                <h3>Número de Teléfono</h3>
+                <p><a href="tel:+155895548855">+54 2804383954</a></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-email">
+                <i class="bi bi-envelope"></i>
+                <h3>Correo Electrónico</h3>
+                <p>
+                  <a href="mailto:info@pixelgrafia.com">elbadom71@gmail.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer"> <!--Fin de Pagina-->
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <!--CERTIFICADOS-->
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Certificados</h4>
+              <p>
+                Es un honor reconocer los logros y el esfuerzo de cada uno de ustedes. Estos certificados son un testimonio de su dedicación y compromiso. Felicitaciones por su excelente trabajo, y les deseamos muchos más éxitos en el futuro.
+              </p>
+              <div class="social-links">
+                <a href="https://drive.google.com/drive/folders/1tuIWmIi8RV6IUwvmR3qug3Z3Cmlj_J8J?usp=drive_lin" class="telefono"><i class="bi bi-file-earmark-text"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Sede</h4>
+              <p>
+                La sede estará disponible
+                <strong> día viernes, en el horario de 10:00 a 12:00 hs</strong
+                >, para todos aquellos que deseen asistir, disfrutar de un mate,
+                establecer vínculos con otros presentes y disfrutar algo rico
+                para acompañar el momento.
+              </p>
+              <div class="social-links">
+                <a href="https://www.google.com/maps/place/Rotary+Club+Ant%C3%BA+Trelew+Casa+de+la+Amistad+Carlos+A.+Juguera/@-43.2566428,-65.3133823,17z/data=!4m6!3m5!1s0xbe01457c7ee16051:0x9cd2466385cb890!8m2!3d-43.2566428!4d-65.3108074!16s%2Fg%2F11kmlvzrsc?entry=ttu&g_ep=EgoyMDI1MDQyNy4xIKXMDSoASAFQAw%3D%3D" class="telefono"><i class="bi bi-geo-alt-fill"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Servicio de Taxi 24hs</h4>
+              <p>
+                ¿Necesitás un taxi? Acá te dejamos un número confiable para que
+                puedas moverte con tranquilidad <br />
+                <strong>Teléfono:</strong> +54 2804383954<br />
+              </p>
+              <div class="social-links">
+                <a href="tel:+542804383954" class="telefono"><i class="bi bi-telephone"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Contáctenos</h4>
+              <p>
+                Roca 468<br />
+                Trelew - Chubut<br />
+
+                <strong>Teléfono:</strong> +54 2804383954<br />
+                <strong>Correo electrónico:</strong> elbadom71@gmail.com<br />
+              </p>
+              <div class="social-links">
+                <a href="https://www.instagram.com/rotary4921?igsh=MXJoZW81YjIxM3lhcA==" class="instagram"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="display: flex;justify-content: center;align-items: center;">
+        <div>
+          <div class="copyright">
+            2025 © Copyright <strong><span>VeraFe</span></strong>. Todos los derechos reservados
+          </div>
+          <div class="credits">
+            Desarrollado por <a href="https://github.com/Lean-05">VeraFe</a>, como colaborador oficial del evento rotario.
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; height: 32vh;">
+          <img src="./img/logos/verafé-logo-transparente.png" loading="lazy" alt="Imagen centrada" style="max-width: 80%; max-height: 97%; object-fit: contain;">
+        </div>
+      </div>
+    </footer>
+
+    <!--Js de la libreria de animacion-->
+    <script src="./vendor/aos/aos.js" defer></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./vendor/swiper/swiper-bundle.min.js" defer></script>
+
+    <!--Archivo JS Principal-->
+    <script src="./js/main.js?v=1" defer></script>
+  </body>
+</html>
